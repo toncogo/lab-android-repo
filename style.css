@@ -1,0 +1,208 @@
+@charset "UTF-8";
+
+/* Fontes do Google */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+
+/* fontes internas */
+
+@font-face {
+    font-family: 'idroid';
+    src: url(fontes/idroid.otf) format('opentype');
+}
+
+/* - - - - - -  - - - ÁREA CSS  - - - - - -  - - - */ 
+
+html, body {
+    height: 100%;
+    margin: 0px;
+}
+
+header {
+    background-image: linear-gradient(180deg, #04af04, #015f01);
+    padding-top: 15px; /* isso previne a margem colapsada */ 
+    padding-bottom: 8px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+body {
+    background-color: #81d6a7;
+}
+
+main {
+    background-color: rgb(255, 242, 242);
+    margin: 0px 50px 10px 50px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.493); 
+    border-radius: 0px 0px 10px 10px;  
+}
+
+h1 {
+    font-family: "idroid";
+    font-size: 22px;
+    color: #004100;
+    margin: 0px;
+    margin-left: 15px;
+}
+
+h2 {
+    font-family: "idroid";
+    font-size: 18px;
+    color: #004100;
+    background-image: linear-gradient(90deg, #81d6a7, rgb(255, 242, 242));
+    margin-left: 15px;
+}
+
+h3 {
+    border-radius: 10px 10px 0px 0px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.texto-noticias {
+    text-indent: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    word-spacing: 3px;
+    font-style: normal;
+    font-weight: bolder;
+    margin: 15px;
+    text-align: justify;
+}
+
+section#noticias {
+    overflow: hidden;   
+}
+
+picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+    background-color: #004100;
+    margin-bottom: 20px;
+    padding: 20px
+}
+
+.extra {
+    background-color: #bffada;
+    border-radius: 10px;
+    margin: 15px;
+    padding-bottom: 15px;
+}
+
+.extra > h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #2dac2d;
+    color: rgb(255, 242, 242);
+    margin: 0px;
+}
+
+.extra > p {
+    margin: 0px;
+}
+
+.texto-extra { 
+    padding: 20px 15px 0px 15px;
+    text-indent: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    word-spacing: 3px;
+    font-style: normal;
+    font-weight: bolder; 
+    text-align: justify;   
+}
+
+.texto-extra2 { 
+    padding: 0px 15px;
+    text-indent: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    word-spacing: 3px;
+    font-style: normal;
+    font-weight: bolder;  
+    text-align: justify;  
+}
+
+h1#principal {
+    text-align: center;
+    font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
+    font-weight: 100px;
+    font-style: normal;
+    color: rgb(255, 242, 242);
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.671);
+    font-size: 3em;
+}
+
+/* Screen min 400px */
+
+@media screen and (min-width: 420px) {
+
+    .section-links {
+        display: flex; /* Ativa o Flexbox */
+        gap: -200px; /* Espaço entre os sections */
+        margin-right: 15px;
+        }    
+
+    .links1 {
+        width: 50%; /* Define a largura para caber dois lado a lado */
+        flex: 1;
+    }    
+
+    .links2 {
+        width: 50%;       
+    }
+    
+}
+
+
+p#low-h1 {
+    text-align: center;
+    margin-right: 15px;
+    margin-bottom: 35px;
+    margin-left: 15px;
+    font-family: "Roboto Flex", Arial, Helvetica, sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: rgba(255, 242, 242, 0.705);
+    font-size: 1em;
+    font-variation-settings:
+    "slnt" 0,
+    "wdth" 100,
+    "GRAD" 0,
+    "XOPQ" 96,
+    "XTRA" 468,
+    "YOPQ" 79,
+    "YTAS" 750,
+    "YTDE" -203,
+    "YTFI" 738,
+    "YTLC" 514,
+    "YTUC" 712;
+}
+
+nav > a {
+    color: rgb(255, 242, 242);
+    font-size: 15px;
+    font-family: "Roboto Flex", Arial, Helvetica, sans-serif;
+    font-style: solid;
+    text-decoration: none;
+    margin: 10px;
+}
+
+nav > a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #004100;
+    padding: 5px 0px 5px 0px;
+    margin: 10px 0px 0px 0px;
+}
+
+footer > p {
+    text-align: center;
+    color: rgba(255, 242, 242, 0.705);
+    margin: 0px;
+}
