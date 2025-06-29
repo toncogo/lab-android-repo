@@ -1,2 +1,2 @@
 # lab-android-repo
-teste.
+teste
